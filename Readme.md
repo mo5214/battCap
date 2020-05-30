@@ -29,8 +29,10 @@ Get it from here:
 [link to the GitHub Page!](https://github.com/hholtmann/smcFanControl)
 
 ## Disclaimer
-This script is provided AS-IS. It had undergone limited manual testing, and has the potential to kill your Mac.
-Also, the value set maybe exceeded by about 3 percent (set to 80% ended up with 83%). This is SMC's doing, and is normal.
+This script is provided AS-IS. 
+It had undergone limited manual testing, and has the potential to kill your Mac.
+The value set maybe exceeded by about 3 percent 
+(set to 80% ended up with 83%). This is SMC's doing, and is normal.
 It also takes up to half a minute for the set value to register with the smc.
 
 ## Legal notes
