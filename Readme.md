@@ -9,13 +9,20 @@ This will allow you to prolong the battery's life by setting a limit on the max 
 It will first ask for your input via a pop-up. (via AppleScript)
 It will then call smc utility in smcFanControl app to set the 'BCLM' key in the smc to set the charge limit.
 
+## Usage
+chmod +x the script to be made executable, and run it.
+Personally I use this with BetterTouchTool's script execution and bound it to a hotkey.
+
 ## Requirements
 Requires smcFancontrol.app to be installed in /Applications
+May have to do chmod +x the script to be made executable.
 Get it from here:
 [link to the GitHub Page!](https://github.com/hholtmann/smcFanControl)
 
 ## Disclaimer
-This script is provided AS-IS. It had undergone limited testing, and has the potential to kill your Mac.
+This script is provided AS-IS. It had undergone limited manual testing, and has the potential to kill your Mac.
+Also, the value set maybe exceeded by about 3 percent (set to 80% ended up with 83%). This is SMC's doing, and is normal.
+It also takes up to half a minute for the set value to register with the smc.
 
 ## Credits
 Credits to Hendrik Holtmann for his smcFanControl and in extension, his smc utility shipped with it.
