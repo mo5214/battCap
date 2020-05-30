@@ -8,7 +8,7 @@
 # Credits goes to Hendrik Holtmann behind smcFancontrol for his smc commandline utility.
 # link: https://github.com/hholtmann/smcFanControl
 
-
+# Use Applescript to get input, verify, then convert to ui8...
 inputPer="$(osascript -e 'Tell application "System Events" to display dialog "Enter Battery Max Charge: (1-100)" default answer "" with title "BattCap" ' -e 'text returned of result' 2>/dev/null)" && 
 desiredPer=`python -c "
 try:
@@ -37,6 +37,7 @@ case ${#convPer} in
     ;;
 esac
 fi
+# call smc utility to write smc keys and notify...
 cd /Applications/smcFanControl.app/Contents/Resources
 ./smc -k "BCLM" -w "$convPer"
 osascript -e 'display notification "Max Battery charge set to '$convPer' percent" with title "BattCap"'
