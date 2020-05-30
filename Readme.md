@@ -8,7 +8,7 @@ This will allow you to prolong the battery's life by setting a limit on the max 
 ## Requirements
 Requires smcFancontrol.app to be installed in /Applications
 Get it from here:
-[link to Google!](https://github.com/hholtmann/smcFanControl)
+[link to the GitHub Page!](https://github.com/hholtmann/smcFanControl)
 
 ## Credits
 Credits to Hendrik Holtmann for his smcFanControl and in extension, his smc utility shipped with it.
