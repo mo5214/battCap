@@ -2,7 +2,8 @@
 
 ## What is it?
 A simple shell Script to set Macbook's Battery maximum charge in percent.
-This will allow you to prolong the battery's life by setting a limit on the max charge level to reduce battery's stress. 
+This will allow you to prolong the battery's life 
+by setting a limit on the max charge level to reduce battery's stress. 
 (Li-Ion cells has least stress around 60-80% charge level.)
 
 ## How it works?
@@ -13,10 +14,18 @@ It will then call smc utility in smcFanControl app to set the 'BCLM' key in the 
 chmod +x the script to be made executable, and run it.
 Personally I use this with BetterTouchTool's script execution and bound it to a hotkey.
 
+## Compatibility?
+Should work with any Macbook that has a smc with 'BCLM' key support.
+
+Should work on any recent OS X (oops macOS) versions (10.6+ at the least).
+
 ## Requirements
-Requires smcFancontrol.app to be installed in /Applications
+Requires smcFancontrol.app to be installed in /Applications.
+
 May have to do chmod +x the script to be made executable.
+
 Get it from here:
+
 [link to the GitHub Page!](https://github.com/hholtmann/smcFanControl)
 
 ## Disclaimer
